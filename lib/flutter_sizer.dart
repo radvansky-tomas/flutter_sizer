@@ -1,4 +1,4 @@
-library responsive_sizer;
+library flutter_sizer;
 
 import 'package:flutter/widgets.dart';
 

@@ -1,5 +1,5 @@
-name: responsive_sizer_example
-description: An example app that shows how to use the responsive_sizer package.
+name: flutter_sizer_example
+description: An example app that shows how to use the flutter_sizer package.
 
 publish_to: 'none'
 version: 2.0.0
@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  responsive_sizer:
+  flutter_sizer:
     path: ../
 
 flutter:

@@ -1,6 +1,6 @@
-# Responsive Sizer
+# Flutter Sizer
 
-Responsive Sizer helps implement a responsive layout by providing helper widgets and extensions
+Flutter Sizer helps implement a responsive layout by providing helper widgets and extensions
 
 ![Responsive Image](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
 
@@ -14,10 +14,10 @@ Responsive Sizer helps implement a responsive layout by providing helper widgets
 - [Community Support](#community-support)
 
 # Installation
-Add `responsive_sizer` to pubspec.yaml
+Add `flutter_sizer` to pubspec.yaml
 ```yaml
 dependencies:
-  responsive_sizer: ^2.0.1
+  flutter_sizer: ^1.0.0
 ```
 
 # Parameters
@@ -36,12 +36,12 @@ dependencies:
 
 ## Import the Package
 ```dart
-import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 ```
 
-## Wrap MaterialApp with ResponsiveSizer widget
+## Wrap MaterialApp with FlutterSizer widget
 ```dart
- ResponsiveSizer(
+ FlutterSizer(
       builder: (context, orientation, screenType) {
         return MaterialApp();
       }
@@ -59,7 +59,7 @@ Container(
 ## Font size
 ```dart
 Text(
-  'Responsive Sizer', 
+  'Flutter Sizer', 
   style: TextStyle(fontSize: 15.sp),
 )
 ```
@@ -97,17 +97,17 @@ Device.screenType == ScreenType.tablet
 
 # Take Note
 
-You need to import `responsive_sizer` package in order to access `number.h`, `number.w`, and `number.sp`
+You need to import `flutter_sizer` package in order to access `number.h`, `number.w`, and `number.sp`
 
 **Auto import in VSCode and Android Studio doesn't work for dart extension methods.** Typing `10.h` would not bring up auto import suggestion for this package
 
 One workaround is to type `Device` so that the auto import suggestion would show up:
 ```dart
-import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:fluttersizer/flutter_sizer.dart';
 ```
 
 # Community Support
 
-If you have any suggestions or issues, feel free to open an [issue](https://github.com/CoderUni/responsive_sizer/issues)
+If you have any suggestions or issues, feel free to open an [issue](https://github.com/radvansky-tomas/flutter_sizer/issues)
 
-If you would like to contribute, feel free to create a [PR](https://github.com/CoderUni/responsive_sizer/pulls)
+If you would like to contribute, feel free to create a [PR](https://github.com/radvansky-tomas/flutter_sizer/pulls)

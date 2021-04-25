@@ -1,4 +1,4 @@
-part of responsive_sizer;
+part of flutter_sizer;
 
 /// Type of Screen
 ///

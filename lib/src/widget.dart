@@ -1,4 +1,4 @@
-part of responsive_sizer;
+part of flutter_sizer;
 
 /// Provides `Context`, `Orientation`, and `ScreenType` parameters to the builder function
 typedef ResponsiveBuild = Widget Function(
@@ -10,8 +10,8 @@ typedef ResponsiveBuild = Widget Function(
 /// A widget that gets the device's details like orientation and constraints
 ///
 /// Usage: Wrap MaterialApp with this widget
-class ResponsiveSizer extends StatelessWidget {
-  const ResponsiveSizer({Key? key, required this.builder}) : super(key: key);
+class FlutterSizer extends StatelessWidget {
+  const FlutterSizer({Key? key, required this.builder}) : super(key: key);
 
   /// Builds the widget whenever the orientation changes
   final ResponsiveBuild builder;

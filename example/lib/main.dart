@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,10 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveSizer(
+    return FlutterSizer(
       builder: (context, orientation, screenType) {
         return MaterialApp(
-          title: 'Responsive Sizer Example',
+          title: 'Flutter Sizer Example',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),

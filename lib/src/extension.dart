@@ -1,4 +1,4 @@
-part of responsive_sizer;
+part of flutter_sizer;
 
 extension DeviceExt on num {
   /// Calculates the height depending on the device's screen size
