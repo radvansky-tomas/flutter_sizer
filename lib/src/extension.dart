@@ -12,5 +12,5 @@ extension DeviceExt on num {
   double get w => this * Device.width / 100;
 
   /// Calculates the sp (Scalable Pixel) depending on the device's screen size
-  double get sp => this * (Device.width / 3) / 100;
+  double get sp => this * Device.width * Device.height / 3 / 100 / 1000;
 }

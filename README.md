@@ -17,7 +17,7 @@ Flutter Sizer helps implement a responsive layout by providing helper widgets an
 Add `flutter_sizer` to pubspec.yaml
 ```yaml
 dependencies:
-  flutter_sizer: ^1.0.0
+  flutter_sizer: ^1.0.1
 ```
 
 # Parameters
