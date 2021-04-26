@@ -11,12 +11,11 @@ class MyApp extends StatelessWidget {
     return FlutterSizer(
       builder: (context, orientation, screenType) {
         return MaterialApp(
-          title: 'Flutter Sizer Example',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: Home(),
-        );
+            title: 'Flutter Sizer Example',
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: Home());
       },
     );
   }
@@ -36,7 +35,7 @@ class Home extends StatelessWidget {
           ),
           Text(
             "This text is responsive",
-            style: TextStyle(fontSize: 12.sp), // or Adaptive.sp(12)
+            style: TextStyle(fontSize: 12.0.dp), // or Adaptive.sp(12)
           ),
           Device.orientation == Orientation.portrait
               ? Text("My Orientation is Portrait")

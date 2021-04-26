@@ -1,3 +1,8 @@
+## [1.0.2] - 25.04.2021.
+
+* Deprecate .sp
+* Introduce .dp handling correctly all platforms using width/height ratio and pixels density
+
 ## [1.0.1] - 25.04.2021.
 
 * Handle .sp correctly after orientation change

@@ -23,6 +23,20 @@ class Device {
   /// Device's Width
   static late double width;
 
+  /// Devices' devicePixelRatio
+  static double get devicePixelRatio {
+    // Usually 2.0
+    return (WidgetsBinding.instance?.window.devicePixelRatio ?? 1.0);
+  }
+
+  /// Device's Pixel density https://material.io/design/layout/pixel-density.html#pixel-density
+  static double get pixelDensity {
+    var density =
+        devicePixelRatio * (width > height ? width / height : height / width);
+    print('density - $density');
+    return density;
+  }
+
   /// Sets the Screen's size and Device's Orientation,
   /// BoxConstraints, Height, and Width
   static void setScreenSize(
@@ -58,4 +72,7 @@ class Adaptive {
 
   /// Calculates the sp (Scalable Pixel) depending on the device's screen size
   static double sp(num scalablePixel) => scalablePixel.sp;
+
+  /// Calculates the dp (Density pixels) depending on the device's screen size
+  static double dp(num scalablePixel) => scalablePixel.dp;
 }

@@ -17,20 +17,23 @@ Flutter Sizer helps implement a responsive layout by providing helper widgets an
 Add `flutter_sizer` to pubspec.yaml
 ```yaml
 dependencies:
-  flutter_sizer: ^1.0.1
+  flutter_sizer: ^1.0.2
 ```
 
 # Parameters
 
 * `Adaptive.h()` - Returns a calculated height based on the device
 * `Adaptive.w()` - Returns a calculated width based on the device
-* `Adaptive.sp()` - Returns a calculated sp based on the device
+* `Adaptive.sp()` - Returns a calculated sp based on the device (deprecated)
+* `Adaptive.dp()` - Returns a calculated dp based on the device
 * `.h` - Returns a calculated height based on the device
 * `.w` - Returns a calculated width based on the device
-* `.sp` - Returns a calculated sp based on the device
+* `.sp` - Returns a calculated sp based on the device (deprecated)
+* `.dp` - Returns a calculated dp based on the device
 * `Device.boxConstraints` - Returns the Device's BoxConstraints
 * `Device.orientation` - Returns the Screen Orientation (portrait or landscape)
 * `Device.screenType` - Returns the Screen Type (mobile or tablet)
+* `Device.devicePixelRatio` - Returns the devicePixel Ratio or (1.0)
 
 # Usage
 
@@ -60,7 +63,7 @@ Container(
 ```dart
 Text(
   'Flutter Sizer', 
-  style: TextStyle(fontSize: 15.sp),
+  style: TextStyle(fontSize: 15.dp),
 )
 ```
 
@@ -97,7 +100,7 @@ Device.screenType == ScreenType.tablet
 
 # Take Note
 
-You need to import `flutter_sizer` package in order to access `number.h`, `number.w`, and `number.sp`
+You need to import `flutter_sizer` package in order to access `number.h`, `number.w`, and `number.dp`
 
 **Auto import in VSCode and Android Studio doesn't work for dart extension methods.** Typing `10.h` would not bring up auto import suggestion for this package
 
