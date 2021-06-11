@@ -12,7 +12,8 @@ extension DeviceExt on num {
   double get w => this * Device.width / 100;
 
   /// Calculates the dp (Density pixels) depending on the device's screen size
-  double get dp => this * Device.width / math.log(Device.pixelDensity) / 400;
+  double get dp =>
+      this * Device.width / math.log(Device.pixelDensity * 100) / 100;
 
   /// Calculates the sp (Scalable Pixel) depending on the device's screen size
   @deprecated
