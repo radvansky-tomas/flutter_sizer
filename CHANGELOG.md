@@ -1,3 +1,7 @@
+## [1.0.3] - 16.06.2021.
+
+* Introduce log calculation for .dp
+
 ## [1.0.2] - 26.04.2021.
 
 * Deprecate .sp

@@ -34,8 +34,12 @@ class Home extends StatelessWidget {
             color: Colors.black,
           ),
           Text(
-            "This text is responsive",
+            "This text is responsive 12dp -> ${12.0.dp}",
             style: TextStyle(fontSize: 12.0.dp), // or Adaptive.sp(12)
+          ),
+          Text(
+            "This text is responsive 24dp -> ${24.0.dp}",
+            style: TextStyle(fontSize: 24.0.dp), // or Adaptive.sp(12)
           ),
           Device.orientation == Orientation.portrait
               ? Text("My Orientation is Portrait")
