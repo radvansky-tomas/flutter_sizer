@@ -1,3 +1,7 @@
+## [1.0.4] - 12.09.2021.
+
+* Improve logic to handle different aspect ratios
+
 ## [1.0.3] - 16.06.2021.
 
 * Introduce log calculation for .dp
