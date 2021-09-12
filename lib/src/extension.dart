@@ -15,7 +15,7 @@ extension DeviceExt on num {
   double get dp => (math.log(Device.width * Device.height) /
           math.log(2) *
           this /
-          (Device.devicePixelRatio * 8))
+          (Device.devicePixelRatio * (Device.width / Device.height * 4)))
       .abs();
 
   /// Calculates the sp (Scalable Pixel) depending on the device's screen size

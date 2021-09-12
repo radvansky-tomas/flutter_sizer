@@ -25,13 +25,18 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Center(
+          child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
             height: Adaptive.h(12.5), // or 12.5.h
             width: 50.w, // or Adaptive.w(50)
             color: Colors.black,
+          ),
+          Text(
+            "Resolution is -> ${100.0.w}x${100.0.h}",
           ),
           Text(
             "This text is responsive 12dp -> ${12.0.dp}",
@@ -48,7 +53,7 @@ class Home extends StatelessWidget {
               ? Text("My Screen's Type is a Tablet")
               : Text("My Screen's Type is a Phone")
         ],
-      ),
+      )),
     );
   }
 }

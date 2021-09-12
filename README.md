@@ -17,7 +17,7 @@ Flutter Sizer helps implement a responsive layout by providing helper widgets an
 Add `flutter_sizer` to pubspec.yaml
 ```yaml
 dependencies:
-  flutter_sizer: ^1.0.3
+  flutter_sizer: ^1.0.4
 ```
 
 # Parameters
@@ -106,7 +106,7 @@ You need to import `flutter_sizer` package in order to access `number.h`, `numbe
 
 One workaround is to type `Device` so that the auto import suggestion would show up:
 ```dart
-import 'package:fluttersizer/flutter_sizer.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
 ```
 
 # Community Support
