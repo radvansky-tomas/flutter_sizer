@@ -15,7 +15,7 @@ extension DeviceExt on num {
   double get dp =>
       (math.log(Device.width * Device.height * Device.devicePixelRatio) /
               math.log(2) /
-              16 *
+              18 *
               this)
           .abs();
 
