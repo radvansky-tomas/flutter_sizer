@@ -1,3 +1,7 @@
+## [1.0.5] - 14.05.2022.
+
+* Flutter 3.0 support.
+
 ## [1.0.4] - 12.09.2021.
 
 * Improve logic to handle different aspect ratios

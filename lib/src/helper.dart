@@ -26,7 +26,7 @@ class Device {
   /// Devices' devicePixelRatio
   static double get devicePixelRatio {
     // Usually 2.0
-    return (WidgetsBinding.instance?.window.devicePixelRatio ?? 1.0);
+    return (WidgetsBinding.instance.window.devicePixelRatio);
   }
 
   /// Device's Pixel density https://material.io/design/layout/pixel-density.html#pixel-density
